@@ -44,6 +44,11 @@ void Window::updateSFMLEvents()
 		if (event.type == sf::Event::Closed ||
 			event.key.code == sf::Keyboard::Escape)
 			window->close();
+		if (event.type == sf::Event::KeyPressed)
+		{
+			if (event.key.code == sf::Keyboard::Escape)
+				window->close();
+		}
 	}
 }
 
