@@ -50,17 +50,10 @@ void Window::updateSFMLEvents()
 				switch (event.key.code)
 				{
 				case sf::Keyboard::Escape:
-						window->close;
+						window->close();
 						break;
 				}
 				break;
-		}
-		if (event.type == sf::Event::Closed)
-			window->close();
-		if (event.type == sf::Event::KeyPressed)
-		{
-			if (event.key.code == sf::Keyboard::Escape)
-				window->close();
 		}
 	}
 }
