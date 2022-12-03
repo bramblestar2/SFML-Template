@@ -41,8 +41,7 @@ void Window::updateSFMLEvents()
 {
 	while (window->pollEvent(event))
 	{
-		if (event.type == sf::Event::Closed ||
-			event.key.code == sf::Keyboard::Escape)
+		if (event.type == sf::Event::Closed)
 			window->close();
 		if (event.type == sf::Event::KeyPressed)
 		{
